@@ -15,7 +15,7 @@ pipeline {
        stage ('deploy') {
            steps {
                sshagent(['9d74b3de-7538-4450-939c-2bdaefc16bb9']) {
-               sh 'scp -o StrictHostKeyChecking=no target/*.war root@44.243.238.250:/root/apache-tomcat-9.0.118/webapps'
+               sh 'scp -o StrictHostKeyChecking=no target/*.war root@http:54.185.166.79:/root/apache-tomcat-9.0.118/webapps'
              }
         }
    }
