@@ -6,9 +6,9 @@
 	<h1 style="color: blue; font-size: 40px;" align="center">FIRST APP USING JENKINS</h1>
 	<h1 style="color: red; font-size: 40px;" align="center">THIS IS APP DEPLOYMENT USING TOMCAT</h1>
 	<h1 style="color: green; font-size: 40px;" align="center">234567890</h1>
-	<h1 style="color: pink; font-size: 40px;" align="center">WE ARE SUCCESSFULLY DEPLOYED APPLICATION</h1>
-	<h1 style="color: grey; font-size: 40px;" align="center">new job deployment successfully completed</h1>
-	<h1 style="color: grey; font-size: 40px;" align="center">new job project deplying to tomcat server </h1>
+	<h1 style="color: pink; font-size: 40px;" align="center">WE ARE SUCCESSFULLY DEPLOYED AN  APPLICATION</h1>
+	<h1 style="color: grey; font-size: 40px;" align="center">First job deployment successfully completed</h1>
+	<h1 style="color: grey; font-size: 40px;" align="center">job project deploying to tomcat server </h1>
 
 	
 	
