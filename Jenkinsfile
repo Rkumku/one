@@ -1,8 +1,8 @@
-
 pipeline {
     agent any
 
     stages {
+
         stage('code checkout') {
             steps {
                 git 'https://github.com/Rkumku/one.git'
@@ -17,9 +17,10 @@ pipeline {
 
         stage('deploy') {
             steps {
-                sshagent(['73f77e93-ca9b-4876-b8b7-140e093ae799']) {
-                    sh 'scp -o StrictHostKeyChecking=no target/*.war root@54.185.166.79:/root/apache-tomcat-9.0.118/webapps/'
-                }
+                sh '''
+                scp -i /var/lib/jenkins/.ssh/id_rsa -o StrictHostKeyChecking=no target/myweb.war ec2-user@172.31.9.170:/tmp/
+                ssh -i /var/lib/jenkins/.ssh/id_rsa -o StrictHostKeyChecking=no ec2-user@172.31.9.170 "sudo cp /tmp/myweb.war /root/apache-tomcat-9.0.118/webapps/"
+                '''
             }
         }
     }
